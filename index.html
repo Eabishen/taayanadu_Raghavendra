@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f61b217d65.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Custom styling -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/karnataka_flag.jpeg">
+
+  <title>Taaynadu Raghavendra</title>
+  <style>
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    html {
+      scroll-padding-top: 50px;
+    }
+
+
+    input {
+      overflow: hidden;
+    }
+
+    .section-title {
+      position: relative;
+      font-size: 30px;
+      /* font-weight: 600; */
+      font-family: "Poppins", sans-serif;
+      margin: 0 0 35px;
+    }
+
+    .indexAboutImg {
+      object-fit: cover;
+    }
+
+    .cardImages img {
+      object-fit: cover;
+
+    }
+
+    .sec-pad {
+      padding: 60px 0 0;
+      margin: 50px 0;
+    }
+
+    .contact-sec {
+      align-items: center;
+      display: flex;
+      background-color: #f3f3f5;
+    }
+
+    .contact-sec .contact-ul li,
+    .contact-ul b {
+      font-size: 20px;
+      margin: 10px 0;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      word-wrap: break-word;
+    }
+
+    .contact-sec .contact-ul i {
+      font-size: 18px;
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .contact-detail a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .contact-sec .contact-ul li b:hover {
+      color: #f93;
+    }
+
+    .contact-sec .contact-ul li .fa-location-dot {
+      color: #000;
+      border: 2px solid #000;
+    }
+
+    .contact-sec .contact-ul li .fa-phone {
+      color: #000;
+      border: 2px solid #000;
+    }
+
+    .contact-sec .contact-ul li .fa-envelope {
+      color: #000;
+      border: 2px solid #000;
+    }
+
+    .contact-detail span {
+      width: 400px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-detail span a {
+      font-size: 20px;
+      padding: 6px 12px;
+      color: #000;
+      border-radius: 50%;
+      margin: 0px 5px;
+    }
+
+    .contact-detail span .fb {
+      color: #3b5998;
+      border: 3px solid #3b5998;
+    }
+
+    .contact-detail span .fb:hover {
+      color: #fff;
+      background-color: #3b5998;
+    }
+
+    .contact-detail span .insta {
+      color: #833ab4;
+      border: 3px solid #833ab4;
+    }
+
+    .contact-detail span .insta:hover {
+      color: #fff;
+      background-color: #833ab4;
+    }
+
+    .contact-detail span .twitter {
+      color: #00acee;
+      border: 3px solid #00acee;
+    }
+
+    .contact-detail span .twitter:hover {
+      color: #fff;
+      background-color: #00acee;
+    }
+
+    form.contFrm {
+      max-width: 506px;
+      margin: auto;
+    }
+
+    .inptFld {
+      width: 100%;
+      height: 50px;
+      border: 0;
+      margin: 0 0 10px;
+      border-radius: 8px;
+      padding: 0 20px;
+      font-size: 16px;
+      color: #000;
+    }
+
+    .inptFld:focus {
+      outline-offset: -4px;
+      outline: 1px solid #f93;
+    }
+
+    .icon-feature {
+      width: 100px;
+      height: 100px;
+      aspect-ratio: 1/1;
+      margin-inline: auto;
+      /* justify-content: center; */
+      /* align-items: center; */
+      display: flex;
+      box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+      border-radius: 26px;
+      padding: 10px;
+
+    }
+
+    .contFrm textarea {
+      height: 75px;
+      padding-top: 5px;
+    }
+
+    .inptBtn {
+      height: 50px;
+      border: 0;
+      background: var(--primary-color);
+
+      font-size: 14px;
+      color: #fff;
+      margin: auto;
+      letter-spacing: 1px;
+      cursor: pointer;
+      width: 100%;
+      max-width: 200px;
+      border-radius: 12px;
+    }
+
+    /* Responcive css Start */
+
+    @media (max-width: 991px) {
+      .sec-pad {
+        padding: 20px 0 0px;
+      }
+
+      .contact-sec .contact-ul li,
+      .contact-ul b {
+        font-size: 18px;
+      }
+
+      .contact-sec .contact-ul i {
+        font-size: 14px;
+        padding: 6px;
+        margin-right: 6px;
+      }
+
+      .inptFld {
+        height: 40px;
+        margin: 0 0 10px;
+        padding: 0 14px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .contact-detail span {
+        width: auto;
+      }
+
+      .contact-detail span a {
+        font-size: 18px;
+        padding: 5px 10px;
+        color: #000;
+        border-radius: 50%;
+        margin: 0px 5px 20px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .section-title {
+        font-size: 26px;
+        font-weight: 500;
+      }
+
+      .contact-sec {
+        border-radius: 10% 10% 0% 0% / 5% 5% 0% 0%;
+      }
+
+      .contact-sec .contact-ul i {
+        border: none;
+      }
+
+      .inptFld {
+        height: 36px;
+        margin: 0 0 8px;
+        padding: 0 14px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .businesscards {
+        gap: 1.5rem;
+      }
+
+      .contact-sec .contact-ul li,
+      .contact-ul b {
+        font-size: 16px;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .iconLink {
+      color: black;
+      margin-left: 30px;
+    }
+
+    .cardImages {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: 1500px) {
+      .cardImages {
+        width: 100%;
+        /* height: 25vw; */
+        object-fit: cover;
+      }
+    }
+
+    @media only screen and (max-width: 950px) {
+      .cardImages {
+        width: 100%;
+        height: 28vw;
+        object-fit: cover;
+      }
+    }
+
+    @media only screen and (max-width: 750px) {
+      .cardImages {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .rgttxt {
+        width: 100vw;
+        height: 80vw;
+      }
+
+      .cardImages {
+        width: 100%;
+        height: 65vw;
+        object-fit: cover;
+      }
+
+      .aboutuscenter {
+        text-align: center;
+      }
+
+      .contact-detail h1 {
+        text-align: center !important;
+
+      }
+    }
+
+    .cardImages:hover {
+      animation: zoom-in 1s ease;
+    }
+
+    @keyframes zoom-in {
+      0% {
+        transform: scale(1, 1);
+      }
+
+      50% {
+        transform: scale(1.1, 1.1);
+      }
+
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+
+    .indexAboutImg {
+      height: 550px;
+    }
+
+    @media only screen and (min-width: 1900px) {
+      .indexAboutImg {
+        height: 470px;
+        width: 700px;
+      }
+    }
+
+    @media only screen and (max-width: 1880px) {
+      .indexAboutImg {
+        height: 450px;
+        width: 600px;
+      }
+    }
+
+    @media only screen and (max-width: 1400px) {
+      .indexAboutImg {
+        height: 450px;
+        width: 480px;
+      }
+    }
+
+    .indexGallery {
+      display: flex;
+      justify-content: center;
+    }
+
+    .businessSubHead {
+      padding-top: 26px !important;
+      padding-bottom: 17px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loadingscreen" class="loading">
+    <span class="loader"></span>
+  </div>
+  <nav id="top" class="navbar navbar-expand-lg shadow-sm px-sm-1 px-2 py-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Taaynadu Raghavendra</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#business">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">Contact Us</a>
+          </li>
+        </ul>
+        <!-- <button class="btn btn-custom me-2" type="submit">
+                    <a class="nav-link" href=""> Reach out </a>
+                </button> -->
+        <!-- <button class="btn btn-custom me-2" type="submit">
+                    <a class="nav-link" href=""> Contact us </a>
+                </button> -->
+      </div>
+    </div>
+  </nav>
+  <div class="img-cover" style="margin-top: 80px;">
+    <!-- Navbar  -->
+
+    <!-- Navbar ends -->
+    <!-- Landing -->
+    <!-- <header id="landing">
+        <div class="landing-page">
+          <div class="overlay"></div>
+          <div class="landing-bg">
+            <p class="landing-name">Mr. Es En Krissnaiahsetty</p>g
+            <h1 class="landing-main-text">
+              The Right Leader For The Right Reasons
+            </h1>
+            <div class="landing-text">
+              A philanthropist, religious leader & former politician!
+            </div>
+            <button type="button">Discover more</button>
+          </div>
+        </div>
+      </header> -->
+
+    <div class="mainpage" id="home">
+      <div data-aos="fade-up" data-aos-duration="1000" class="rgttxt">
+        <img src="./assets/Main image1.png" alt="" />
+      </div>
+      <div class="lfttxt">
+        <div class="landing-bg">
+          <!-- <p class="landing-name">Mr.Maluru Es En Krisshnaiahsettyy</p> -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="animate">
+            <h1 class="landing-main-text">Prosperity & Change Begins With US</h1>
+            <div class="landing-text">Social Worker, Political Leader & Businessman</div>
+            <div class="col-lg-6" style="display: flex;justify-content: end;">
+              <a href="https://www.facebook.com/TaaynaduRaghavendraKaraveGajasene" class="iconLink"
+                style="color: #004999 !important;"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+              <a href="https://www.youtube.com/@karavegajasene" class="iconLink" style="color: red !important;"><i
+                  class="fa-brands fa-youtube fa-2x"></i></a>
+            </div>
+            <!--<button type="button" class="btn discmore w-30" >Discover more</button>-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Landing Ends-->
+  </div>
+
+  <div id="about" class="container-fluid" style="background-color: #f3f3f5;">
+    <div class="row" style="
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    
+">
+      <div class="col-lg-6" style="display: flex;justify-content: center;align-items: center;">
+        <img src="assets/About_Us.jpg" class="indexAboutImg">
+      </div>
+      <div class="col-lg-6">
+        <div class="pt-md-5 mt-3 p-md-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="text-blue aboutuscenter">About us</h1>
+            </div>
+
+          </div>
+
+          <p class="pt-3 text-justify">Taaynadu Raghvendra is an Indian citizen who hails from the southern state of
+            India - Karnataka. His native roots go back to Sorahra Taluk, Chandragutti Hobli, Badada Bailu Village, in
+            Shimoga district of Karnataka. Speaking of his personal life, his family comprises Smt Kusumamma and Late
+            Veerabhadrappa Gowda and his 3 siblings. He is the last and youngest one among the siblings and their
+            respective names are Gangamma, Sadananda and Manjunath respectively.
+          </p>
+          <p class="pt-3 text-justify ">
+            Mr. Raghavendra has been an average student at school whose only focus was to do more of things which
+            involve practical doings and not just theoretical learning. He started his journey of being independent by
+            being self-employed with a very strong determination to achieve something great in life. He has gone through
+            a lot of hardships & struggles in life but he has moved forward positively with the sole intention of
+            serving his nation and his state on the whole and giving back to his home country.
+          </p>
+          <p class="pt-3 text-justify ">
+            He has initiated and established various bodies including the Karnataka Rakshana Vedike Gajaseve Sangha for
+            the empowering and preserving of local culture and regional language. His sole direction is to serve and
+            protect age-old practices of our ancestors and do so for the welfare of the people at large with the support
+            of many gurus, political leaders and other elderly people. Mr. Raghavendra believes that all people are one
+            and doesn't do any discrimination on the basis of caste, religion, rich & poor and treats everyone in a
+            friendly and equal manner.
+            <!-- Mr. Raghavendra has been an average student at school whose only focus was to do more of things which involve practical doings and not just theoretical learning. He started his journey of being independent by being self-employed with a very strong determination to achieve something great in life. He has gone through a lot of hardships & struggles in life but he has moved forward positively with the sole intention of serving his nation and his state on the whole and giving back to his home country. -->
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="row pb-4" style="
+        width: 72%;
+        margin-top: 30px;
+       margin-inline: auto;
+    ">
+      <div class="col-lg-4">
+        <img src="assets/shared-vision.png" class="icon-feature" alt="" style="
+           
+        ">
+        <h5 style="
+            text-align: center;
+            margin-top: 10px;
+
+        ">Strong Vision</h5>
+      </div>
+      <div class="col-lg-4">
+        <img src="assets/user-avatar.png" class="icon-feature" alt="" style="
+           
+        ">
+        <h5 style="
+            text-align: center;
+            margin-top: 10px;
+        ">Integrity</h5>
+      </div>
+      <div class="col-lg-4">
+        <img src="assets/ideology.png" class="icon-feature" alt="" style="
+           
+        ">
+        <h5 style="
+            text-align: center;
+            margin-top: 10px;
+        ">Good Ideology</h5>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- About Section -->
+  <!-- <section class="container-fluid aboutUs" id="about">
+        
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row bg-white aboutContentRow">
+                <div class="col-md-6 pt-5 pt-md-0 imgCol">
+                    <div class="row">
+                        <div class="col-md-9 aboutImgPar text-center" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="assets/About_Us.jpg" class="indexAboutImg">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="aboutSocialMedia">
+                                <ul class="list-unstyled py-5">
+                                    <li><a href="https://www.facebook.com/TaaynaduRaghavendraKaraveGajasene" class="iconLink"><i class="fa-brands fa-square-facebook p-3 fa-2x"></i></a></li>
+                                    <li><a href="" class="iconLink"><i class="fa-brands fa-instagram p-3 fa-2x"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@karavegajasene" class="iconLink"><i class="fa-brands fa-youtube p-3 fa-2x"></i></a></li>
+                                    <li><a href="" class="iconLink"><i class="fa fa-whatsapp p-3 fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pt-md-5 mt-3 p-md-4">
+                        <h1 class="text-blue">About us</h1>
+                        <p class="pt-3 text-justify">Taaynadu Raghvendra is an Indian citizen who hails from the southern state of India - Karnataka. His native roots go back to Sorahra Taluk, Chandragutti Hobli, Badada Bailu Village, in Shimoga district of Karnataka. Speaking of his personal life, his family comprises Smt Kusumamma and Late Veerabhadrappa Gowda and his 3 siblings. He is the last and youngest one among the siblings and their respective names are Gangamma, Sadananda and Manjunath respectively.
+                        </p>
+                        <p class="pt-3 text-justify d-none d-lg-block">
+                            Mr. Raghavendra has been an average student at school whose only focus was to do more of things which involve practical doings and not just theoretical learning. He started his journey of being independent by being self-employed with a very strong determination to achieve something great in life. He has gone through a lot of hardships & struggles in life but he has moved forward positively with the sole intention of serving his nation and his state on the whole and giving back to his home country.
+                        </p>
+                    </div>
+                </div>
+                <p class="pt-3 text-justify d-block d-lg-none">
+                    He has initiated and established various bodies including the Karnataka Rakshana Vedike Gajaseve Sangha for the empowering and preserving of local culture and regional language. His sole direction is to serve and protect age-old practices of our ancestors and do so for the welfare of the people at large with the support of many gurus, political leaders and other elderly people. Mr. Raghavendra believes that all people are one and doesn't do any discrimination on the basis of caste, religion, rich & poor and treats everyone in a friendly and equal manner.
+                </p>
+                <p class="pt-3 text-justify">
+                    He has initiated and established various bodies including the Karnataka Rakshana Vedike Gajaseve Sangha for the empowering and preserving of local culture and regional language. His sole direction is to serve and protect age-old practices of our ancestors and do so for the welfare of the people at large with the support of many gurus, political leaders and other elderly people. Mr. Raghavendra believes that all people are one and doesn't do any discrimination on the basis of caste, religion, rich & poor and treats everyone in a friendly and equal manner.
+                </p>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-lg-4 col-md-6 mx-auto p-md-5 pt-3 developmentCard">
+                <div class="text-center"><img src="assets/development.png" style="width:25%;"></div>
+                <h4 class="fw-bold text-center py-2 text-blue">Strong Vision</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 mx-auto p-md-5 pt-3 developmentCard">
+                <div class="text-center"><img src="assets/development.png" style="width:25%;"></div>
+                <h4 class="fw-bold text-center py-2 text-blue">Integrity</h4>
+            </div>
+            <div class="col-lg-4 col-md-6 mx-auto p-md-5 pt-3 developmentCard">
+                <div class="text-center"><img src="assets/development.png" style="width:25%;"></div>
+                <h4 class="fw-bold text-center py-2 text-blue">Good Ideology</h4>
+            </div>
+        </div>
+    </section> -->
+  <!-- About Section End -->
+
+  <!-- Feature Section -->
+
+  <section id="business" class="container py-5">
+    <div class="row businesscards" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="text-center text-blue ">Businesses</h1>
+      <div class="col-lg-3 col-md-6 mx-auto p-md-3">
+        <div class="card featureCard overflow-hidden">
+          <div class="cardImages"><a href="manpower.html"><img src="assets/manpower-min.jpg"></a></div>
+          <h5 class="text-center pt-2 businessSubHead" style="
+                    background-color: #dfdede;
+                    margin-bottom: 0px;
+                ">Manpower Agency</h5>
+          <!-- <p class="text-center p-3">Dolor delectus exercitationem, aperiam officia nostrum quis consectetur
+                        quas pariatur qui. Ipsa officiis quia voluptas quibusdam doloremque?</p> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mx-auto p-md-3">
+        <div class="card featureCard overflow-hidden">
+          <div class="cardImages"><a href="garment.html"><img src="assets/garments.jpg"></a></div>
+          <h5 class="text-center pt-2 businessSubHead" style="
+    background-color: #dfdede;
+    margin-bottom: 0px;
+">Garments</h5>
+          <!-- <p class="text-center p-3">Dolor delectus exercitationem, aperiam officia nostrum quis consectetur
+                        quas pariatur qui. Ipsa officiis quia voluptas quibusdam doloremque?</p> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mx-auto p-md-3">
+        <div class="card featureCard overflow-hidden">
+          <div class="cardImages"><a href="ambulanceSeva.html"><img src="assets/Ambulance.jpg"></a></div>
+          <h5 class="text-center pt-2 businessSubHead" style="
+    background-color: #dfdede;
+    margin-bottom: 0px;
+" style="border-top: 0.05px solid #c9c3c3;">Ambulance Seva</h5>
+          <!-- <p class="text-center p-3">Dolor delectus exercitationem, aperiam officia nostrum quis consectetur
+                        quas pariatur qui. Ipsa officiis quia voluptas quibusdam doloremque?</p> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mx-auto p-md-3">
+        <div class="card featureCard overflow-hidden">
+          <div class="cardImages"><a href="realEstate.html"><img src="assets/real Estate-min.jpg"></a></div>
+          <h5 class="text-center pt-2 businessSubHead" style="
+    background-color: #dfdede;
+    margin-bottom: 0px;
+">Real Estate</h5>
+          <!-- <p class="text-center p-3">Dolor delectus exercitationem, aperiam officia nostrum quis consectetur
+                        quas pariatur qui. Ipsa officiis quia voluptas quibusdam doloremque?</p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Section End -->
+
+  <!-- Gallery Section -->
+
+  <section class="event py-5" id="gallery">
+    <h1 class="text-center text-blue " data-aos="fade-up" data-aos-duration="1000">Gallery</h1>
+    <div class="container py-5">
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/1.jpg" alt=""></div>
+        </div>
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/2.jpg" alt=""></div>
+        </div>
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/3.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/7.jpg" alt=""></div>
+        </div>
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/9.jpg"></div>
+        </div>
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/8.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/4.jpg" alt=""></div>
+        </div>
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/5.jpg" alt=""></div>
+        </div>
+        <div class="col-md-4 indexGallery text-center p-2">
+          <div class="eventImg"><img src="assets/6.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section End -->
+
+
+  <!-- Vote for us section -->
+  <div class="vote-section">
+    <div data-aos="zoom-in-down" data-aos-duration="1000" class="vote-left">
+      <img src="./assets/Why Choose Us Image.jpg" alt="" />
+    </div>
+    <div class="vote-right">
+      <p data-aos="fade-in" data-aos-duration="1000" class="heading" style="font-size: 40px">
+        Why Choose Us
+      </p>
+      <!-- <p data-aos="fade-in" data-aos-duration="1000" class="main-text">
+                If you want a better future,<br />
+                Vote for us
+                lorem ipsum
+            </p> -->
+      <div class="vote-reasons">
+        <div data-aos="fade-up" data-aos-duration="1000" class="reason1">
+          <div class="tick-mark">
+            <i class="fa-lg fa-solid fa-circle-check"></i>
+          </div>
+          <div class="content">
+            <h3>For A Better Future</h3>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="reason2">
+          <div class="tick-mark">
+            <i class="fa-lg fa-solid fa-circle-check"></i>
+          </div>
+          <div class="content">
+            <!-- <h3>Strong vision</h3> -->
+            <h3>Honesty & Integrity</h3>
+            <p>
+              <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit-->
+              <!--tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.-->
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="reason3">
+          <div class="tick-mark">
+            <i class="fa-lg fa-solid fa-circle-check"></i>
+          </div>
+          <div class="content">
+            <!-- <h3>Honesty & Transparency</h3> -->
+            <h3>Transparent Work Ethics</h3>
+            <p>
+              <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit-->
+              <!--tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.-->
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="reason3">
+          <div class="tick-mark">
+            <i class="fa-lg fa-solid fa-circle-check"></i>
+          </div>
+          <div class="content">
+            <!-- <h3>Honesty & Transparency</h3> -->
+            <h3>Clear & Strong Vision</h3>
+            <p>
+              <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit-->
+              <!--tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.-->
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="reason3">
+          <div class="tick-mark">
+            <i class="fa-lg fa-solid fa-circle-check"></i>
+          </div>
+          <div class="content">
+            <!-- <h3>Honesty & Transparency</h3> -->
+            <h3>People Oriented</h3>
+            <p>
+              <!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit-->
+              <!--tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.-->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vote for us section -->
+
+
+
+
+  <div id="contact" class="contact-sec sec-pad" id="contact"
+    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;padding-top: 96px;margin-top: 0;margin-bottom: 0;padding-bottom: 36px;">
+    <div class="container">
+      <div class="row" style="
+          padding-bottom: 46px;
+      ">
+        <div class="col-md-6">
+          <div class="contact-detail">
+            <h1 class="section-title" style="
+                font-size: 45px;
+                color: #004999;
+            ">Contact us</h1>
+
+            <ul class="contact-ul">
+              <li style="font-size: 17px;list-style-type: none;"><i class="fa fa-location-dot"></i>No. 19, Pushpagiri,
+                31st Main Road, Banashankari 3rd Stage, Bangalore 560085</li>
+
+              <li style="font-size: 17px;list-style-type: none;">
+                <i class="fa fa-phone"></i>
+                <a href="tel:8029915224">+91 8029915224</a>
+              </li>
+
+              <li style="font-size: 17px;list-style-type: none;">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:pardeepkumar4bjp@gmail.com">info@taaynaduraghavendra.com</a>
+              </li>
+            </ul>
+
+            <!-- <span>
+                  <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                </span> -->
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <form action="#" class="contFrm" method="POST" style="
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              padding: 15px;
+              border-radius: 10px;
+              background-color: gray;
+              padding-top: 35px;
+              padding-bottom: 30px;
+          ">
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" name="name" placeholder="Your Name" class="inptFld" required />
+              </div>
+
+              <div class="col-sm-6">
+                <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
+              </div>
+
+              <div class="col-sm-6">
+                <input type="tel" name="phone" placeholder="Phone Number" class="inptFld" required />
+              </div>
+
+              <div class="col-sm-6">
+                <input type="text" name="sub" placeholder="Subject" class="inptFld" required />
+              </div>
+
+              <div class="col-12">
+                <textarea class="inptFld" rows="" cols="" placeholder="Your Message..." required></textarea>
+              </div>
+
+              <div class="col-12" style="
+                  display: flex;
+                  justify-content: center;
+              ">
+                <input type="submit" name="submit" value="SUBMIT" class="inptBtn" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="text-center py-4 shadow-xl footer">
+        <div>
+          Copyright (C)2023
+          <span style="color: var(--primary-color); font-weight: 600">Taaynadu Raghavendra</span>. All rights
+          reserved.
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Contact -->
+  <!-- <section id="contact" class="position-relative overflow-hidden">
+        <div class="contactflex">
+            <div class="row" style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                <div class="col-md-4" >
+                    <div class="phemailcont">
+                        <i class="fa fa-phone icon icon1" style="
+                        margin-left: auto;
+                        margin-right: auto;
+                    "></i>
+                        <div class="heading-phem" style="text-align: center;">Call us</div>
+                        <div class="phnum" style="
+                        text-align: center;
+                        justify-content: center;
+                    ">
+                            <i class="fa fa-phone"></i>
+
+                            <a href="tel:+91 9876543210">+91 9876543210
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" >
+                    <div class="phemailcont">
+                        <i class="fa icon2 icon fa-mail-bulk" style="
+                        margin-left: auto;
+                        margin-right: auto;
+                    "></i>
+                        <div class="heading-phem" style="text-align: center;">Email us</div>
+                        <div class="phnum" style="
+                        text-align: center;
+                        justify-content: center;
+                    ">
+                            info@taaynaduraghavendra.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" >
+                    <div class="phemailcont">
+                        <i class="fa icon2 icon fa-location-pin" style="
+                        margin-left: auto;
+                        margin-right: auto;
+                    "></i>
+                        <div class="heading-phem" style="text-align: center;">Locate us</div>
+                        <div class="phnum" style="width: 60%;margin-right: auto;margin-left: auto;text-align: center;">
+                            No. 19, Pushpagiri, 31st Main Road, Banashankari 3rd Stage, Bangalore 560085
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="formcontainer">
+                    <div class="formhead text-white">
+                        Fill out the form and We'll get in touch as soon as
+                        possible.
+                    </div>
+                    <form action="">
+                        <div class="inputcover">
+                            <input type="text" placeholder="Example: Indra Kumar" required
+                                aria-placeholder="Example: Indra Kumar" />
+                            <input type="email" placeholder="example@mail.com" required
+                                aria-placeholder="example@mail.com" />
+                            <input type="tel" placeholder="Example: 0987423545" required />
+                            <textarea placeholder="Drop your thoughts..." aria-placeholder="Share your thoughts..."
+                                name="" id="" rows="4"></textarea>
+                            <button class="formButton">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottomcontact">
+            <div class="position-absolute bluebackground"></div>
+            <div class="position-absolute rounded-circle circle-shape-3"></div>
+            <div class="position-absolute rounded-circle circle-shape-1"></div>
+        </div>
+    </section> -->
+
+  <!-- Footer -->
+
+  <!-- Footer Ends-->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+
+  <!-- Custom Js -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

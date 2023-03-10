@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f61b217d65.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/manpowerStyle.css" />
+    <link rel="icon" href="assets/karnataka_flag.jpeg">
+
+    <title>Taaynadu Raghavendra</title>
+    <!-- <style>
+    
+  
+
+  
+</style> -->
+</head>
+
+<body>
+    <div id="loadingscreen" class="loading">
+        <span class="loader"></span>
+    </div>
+    <div class="img-cover">
+      <!-- Navbar  -->
+      <nav id="top" class="navbar navbar-expand-lg shadow-sm px-sm-1 px-2 py-1">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Taaynadu Raghavendra</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto me-lg-4 mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html#about">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">Business</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html#gallery">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="">Contact Us</a>
+                      </li>
+                  </ul>
+                  <!-- <button class="btn btn-custom me-2" type="submit">
+                      <a class="nav-link" href=""> Reach out </a>
+                  </button> -->
+                  <!-- <button class="btn btn-custom me-2" type="submit">
+                      <a class="nav-link" href=""> Contact us </a>
+                  </button> -->
+              </div>
+          </div>
+      </nav>
+      <!-- Navbar ends -->
+
+      <!-- Landing Ends-->
+  </div>
+    <!-- <div class="row" style="text-align: center;">
+      <h1 class="fadeInEffect" style="margin-top: 15px;margin-bottom: 15px;color: rgb(36, 37, 124);font-family: Arial, Helvetica, sans-serif;">Our Manpower</h1>
+    </div> -->
+
+    <div class="slider fadeInEffect" >
+      <img
+        id="img-1"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlok9mZBBbWdzp-5J0ymsDgXLGmvTxIXqKNg&usqp=CAU"
+        alt="Image 1"
+      />
+      <div class="centered" style="z-index: 100 !important;">
+        <h1 id="middleHeading" style="color: #fff;font-size: 60px;"></h1>
+      </div>
+      <img
+        id="img-2"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEkPurWdQYR3EIzuBgciEeh9-Bnk3MgLRW9UpuAd5PG8euvxeK-s4T1yk8H3_mM2NNtsM&usqp=CAU"
+        alt="Image 2"
+      />
+      <img
+        id="img-3"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56uidJz9b6l-n4KjDB4Ye9bBurtgObyuRmQ&usqp=CAU"
+        alt="Image 3"
+      />
+      <img
+        id="img-4"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvnjQ5DkLJ0qIg80IW51KX6F0o5ZqJK-H1bA&usqp=CAU"
+        alt="Image 4"
+      />
+    </div>
+    <div class="navigation-button">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+      <span class="dot" onclick="changeSlide(3)"></span>
+    </div>
+
+    <!-- <div class="slideshow-container">
+
+        <div class="mySlides" style="border: 2px solid gray;background-color: #bbb;">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/event1.jpg" style="width:100%">
+          <div class="text" >Caption Text</div>
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/event2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/event3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div> -->
+
+
+
+        <!-- <section style="margin-top: 50px;" class="fadeInEffect">
+          <div class = "image">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ0sEo6zYrJVo--x4OALL7kVVDwixRbGcNog&usqp=CAU">
+          </div>
+
+          <div class = "content">
+              <h2 style="color: #fff;">About Us</h2>
+              <span></span>
+              <p>A company is known for its employees. We are a manpower agency based out of Bengaluru who believe in getting the right candidate for your company depending upon your requirements. We act as a bridge between the organization and the resources and facilitate all the aspects pertaining to educating the organization culture, rules and regulations, discipline, payroll, etc. Professional manpower agencies like ours know exactly where to source the right kind of resources depending upon the need which reduces the cost to the company in terms of effort, time and resources involved in finding one.</p>
+                <br>
+                <p>With our due diligence and thorough screening process, we verify all documents submitted by each candidate and accept and offer their services through the agency to various clients that we have been catering to through the years. Our clients range from small hotels to restaurants to big companies who have been satisfied and continuously growing their requirements with us on a contractual basis.</p>
+              
+          </div>
+      </section> -->
+      <div class="row aboutUsRow">
+        <div class="col-lg-5 aboutUsImgDiv">
+          <img class="aboutUsImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ0sEo6zYrJVo--x4OALL7kVVDwixRbGcNog&usqp=CAU" alt="">
+        </div>
+        <div class="col-lg-7">
+          <div class = "content">
+            <h2 class="aboutUsH2">About Us</h2>
+            <span><!-- line here --></span>
+            <p>A company is known for its employees. We are a manpower agency based out of Bengaluru who believe in getting the right candidate for your company depending upon your requirements. We act as a bridge between the organization and the resources and facilitate all the aspects pertaining to educating the organization culture, rules and regulations, discipline, payroll, etc. Professional manpower agencies like ours know exactly where to source the right kind of resources depending upon the need which reduces the cost to the company in terms of effort, time and resources involved in finding one.</p>
+              <br>
+              <p>With our due diligence and thorough screening process, we verify all documents submitted by each candidate and accept and offer their services through the agency to various clients that we have been catering to through the years. Our clients range from small hotels to restaurants to big companies who have been satisfied and continuously growing their requirements with us on a contractual basis.</p>
+            
+        </div>
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center; margin-top: 40px;">
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Our Resources</h1>
+      </div>
+      <div class="row" style="margin-top: 30px;margin-left: auto;margin-right: auto;display: flex;justify-content: center;margin-bottom: 100px;">
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/securityGaurd.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Security Guards </div>
+          </div>
+          <!-- <h3>Security Guards </h3> -->
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4  resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/houseKeeping.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Housekeeping</div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/storeA.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Store Assistants</div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/dataEntry.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Data Entry Operator </div>
+          </div>
+          <!-- <h3>Data Entry Operator </h3> -->
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/garderner.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Gardeners</div>
+          </div>
+          <!-- <h3>Gardeners</h3> -->
+        </div>
+      </div>
+      <div class="row" style="margin-top: 40px;margin-left: auto;margin-right: auto;display: flex;justify-content: center;">
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/bouncer.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Bouncers</div>
+          </div>
+          <!-- <h3>Bouncers</h3> -->
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/management.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Management Staffs</div>
+          </div>
+          <!-- <h3>Management Staffs </h3> -->
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/driver.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Drivers</div>
+          </div>
+          <!-- <h3>Drivers</h3> -->
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/helpers.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Helpers</div>
+          </div>
+          <!-- <h3>Helpers</h3> -->
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 resourceBox">
+          <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;" src="assets/office.jpeg" alt="">
+          <div class="voclassthi">
+            <div class="textResource">Office Assistant</div>
+          </div>
+          <!-- <h3>Office Assistant</h3> -->
+        </div>
+      </div>
+
+      <div class="header">
+        <h1>Our Clients</h1>
+      </div>
+      <!-- <div class="row1-container">
+        <div class="box box-down cyan">
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Brigade hospitality </h2>
+          <i class="fas fa-arrow-right"></i><h2  class="clientHeading">Brigade Agatha Club</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Three dots and dash</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading" >Blue Moon and Group's</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Quest Alliance</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">TSF Media Private Limited</h2>
+        </div>
+    
+        <div class="box red">
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Avant Garde Hospitality Pvt Ltd </h2>
+          <i class="fas fa-arrow-right"></i><h2  class="clientHeading">Hungry & Thirsty LLP </h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">SK Public School</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading" >Brigade - The Wood Rose Club</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Brigade MLR Club</h2>
+        </div>
+    
+        <div class="box box-down blue">
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Fortis La Femme</h2>
+          <i class="fas fa-arrow-right"></i><h2  class="clientHeading">Sidvin Concrete</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Hotel Anand Sagar Inn</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading" >Sai Nandana Developers & Properties</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Deem Sensing Technologies Pvt Ltd</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Thalappakatti Hotels Pvt Ltd</h2>
+        </div>
+      </div>
+      <div class="row2-container">
+        <div class="box orange">
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Thermocent Technologies Pvt Ltd </h2>
+          <i class="fas fa-arrow-right"></i><h2  class="clientHeading">Parkzebra Technologies Pvt Ltd</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Lifestyle International Pvt Ltd</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading" >K P Group Constructions Pvt Ltd</h2>
+          <i class="fas fa-arrow-right"></i><h2 class="clientHeading">Meta-i Technologies Pvt Ltd</h2>
+        </div>
+      </div> -->
+
+     
+      
+<div class="flex-container">
+  <div class="slider-container">
+    <ul class="sliderLogo">
+      <li class="slider__slide">
+        <div class="slide__content">Brigade hospitality </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Brigade Agatha Club </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Three dots and dash</div>
+      </li>
+     <li class="slider__slide">
+        <div class="slide__content">Blue Moon and Group's </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Quest Alliance </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Avant Garde Hospitality Pvt Ltd </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Hungry & Thirsty LLP </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">SK Public School </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Brigade - The Wood Rose Club </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Brigade MLR Club</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Fortis La Femme </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Sidvin Concrete</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Hotel Anand Sagar Inn </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Sai Nandana Developers & Properties</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Deem Sensing Technologies Pvt Ltd </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Thermocent Technologies Pvt Ltd </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Parkzebra Technologies Pvt Ltd </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Lifestyle International Pvt Ltd </div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">K P Group Constructions Pvt Ltd</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Meta-i Technologies Pvt Ltd</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">TSF Media Private Limited</div>
+      </li>
+      <li class="slider__slide">
+        <div class="slide__content">Thalappakatti Hotels Pvt Ltd</div>
+      </li>
+      
+     </ul>
+  </div>
+</div>
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+      <!-- Footer -->
+    <footer class="text-center py-4 shadow-xl footer">
+      <div>
+          Copyright (C)2022
+          <span style="color: var(--primary-color); font-weight: 600">Taaynadu Raghavendra</span>. All rights
+          reserved.
+      </div>
+  </footer>
+  <!-- Footer Ends-->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+<script>
+    var currentImg = 0;
+  var imgs = document.querySelectorAll('.slider img');
+  let dots = document.querySelectorAll('.dot');
+  var interval = 3000;
+
+  // Second banner
+  var secondEventTitle = 'Hi! *Freshmen* Orientation Day';
+
+  // Third banner
+  var thirdEventDate = new Date('2023-02-01'); // pull this from database
+  var thirdEventDateString = thirdEventDate.toLocaleDateString('en-us', { year: 'numeric', month: 'short', day: 'numeric' });
+  var days = calculateDays(new Date(), thirdEventDate) || 0;
+  const countdownText = days > 0 ? `${days} days left` : 'Live Now!';
+
+  var secondImageUrl = `https://ondemand.bannerbear.com/simpleurl/01YWAxB7nGYdJrKoXM/title/text/${encodeURIComponent(secondEventTitle)}`;
+  var thirdImageUrl = `https://ondemand.bannerbear.com/simpleurl/ley9O0B2ZGbB4GjRDY/date/text/${encodeURIComponent(
+    thirdEventDateString
+  )}/countdown/text/${encodeURIComponent(countdownText)}`;
+
+  // document.getElementById('img-2').src = secondImageUrl;
+  // document.getElementById('img-3').src = thirdImageUrl;
+  document.getElementById("middleHeading").innerHTML = "Security guard";
+  var timer = setInterval(changeSlide, interval);
+  
+
+  function changeSlide(n) {
+    for (var i = 0; i < imgs.length; i++) {
+      imgs[i].style.opacity = 0;
+      dots[i].className = dots[i].className.replace(' active', '');
+      console.log("i is = " + i);
+      
+    }
+
+    currentImg = (currentImg + 1) % imgs.length;
+    console.log("currentImg is = " + currentImg);
+    if(currentImg==0){
+        document.getElementById("middleHeading").innerHTML = "Security guard";
+      }
+      else if(currentImg==1){
+        document.getElementById("middleHeading").innerHTML = "House keeping";
+      }
+      else if(currentImg==2){
+        document.getElementById("middleHeading").innerHTML = "Gardener";
+      }
+      else{
+        document.getElementById("middleHeading").innerHTML = "Driver";
+      }
+
+    if (n != undefined) {
+      clearInterval(timer);
+      timer = setInterval(changeSlide, interval);
+      currentImg = n;
+    }
+
+    imgs[currentImg].style.opacity = 1;
+    dots[currentImg].className += ' active';
+  }
+
+  function calculateDays(today, eventDate) {
+    const difference = eventDate.getTime() - today.getTime();
+
+    return Math.ceil(difference / (1000 * 3600 * 24)); // convert to days
+  }
+    // let slideIndex = 1;
+    // showSlides(slideIndex);
+    
+    // function plusSlides(n) {
+    //   showSlides(slideIndex += n);
+    // }
+    
+    // function currentSlide(n) {
+    //   showSlides(slideIndex = n);
+    // }
+    
+    // function showSlides(n) {
+    //   let i;
+    //   let slides = document.getElementsByClassName("mySlides");
+    //   let dots = document.getElementsByClassName("dot");
+    //   if (n > slides.length) {slideIndex = 1}    
+    //   if (n < 1) {slideIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";  
+    //   }
+    //   for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    //   slides[slideIndex-1].style.display = "block";  
+    //   dots[slideIndex-1].className += " active";
+    // }
+</script>
+
+    <!-- Custom Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
