@@ -92,6 +92,11 @@
       margin-left: 2rem;
     }
 
+    .ambulancefeaturewrapper {
+      width: 80%;
+      margin-inline: auto;
+    }
+
     .ambulancefeature {
       width: 80px;
       height: 80px;
@@ -427,7 +432,7 @@
     }
 
     .contact-sec {
-      align-item: center;
+      align-items: center;
       display: flex;
       background-color: #f3f3f5;
     }
@@ -599,6 +604,14 @@
       .section-title {
         font-size: 26px;
         font-weight: 500;
+      }
+
+      .ambulancefeaturewrapper {
+        gap: 2rem;
+      }
+
+      .ambulancefeaturewrapper:first-child {
+        margin-bottom: 2rem;
       }
 
       .contact-sec {
@@ -1137,7 +1150,7 @@
     <h1
       style="color: var(--primary-color); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
       Why Choose Us?</h1>
-    <div class="row mb-2" style="width: 80%; margin-inline: auto;">
+    <div class="row mb-2 ambulancefeaturewrapper">
       <div class="col-lg-3">
         <img src="assets/driverIcon.png" alt="" class="ambulancefeature">
         <h5 style="text-align: center;margin-top: 10px;">Registered & Verified Drivers</h5>
@@ -1156,7 +1169,7 @@
       </div>
 
     </div>
-    <div class="row mb-2" style="width: 80%; margin-inline: auto;">
+    <div class="row mb-2 ambulancefeaturewrapper">
       <div class="col-lg-3">
         <img src="assets/bus.png" alt="" class="ambulancefeature">
         <h5 style="text-align: center;margin-top: 10px;">Patients Transport Vehicle (PTV)</h5>
