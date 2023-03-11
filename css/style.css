@@ -53,6 +53,10 @@
     background: var(--primary-color);
 }
 
+html {
+    scroll-padding-top: 50px;
+}
+
 body {
     /* font-family: "Open Sans", sans-serif; */
     font-family: "gilroy", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -150,6 +154,7 @@ a {
     z-index: 9999;
     width: 100%;
     background-color: #fff;
+    height: 60px;
 }
 
 .navtop:hover,
