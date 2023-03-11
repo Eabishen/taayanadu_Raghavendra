@@ -154,7 +154,6 @@ a {
     z-index: 9999;
     width: 100%;
     background-color: #fff;
-    height: 60px;
 }
 
 .navtop:hover,
@@ -2057,6 +2056,11 @@ img {
     }
 }
 
+@media (max-width: 575px) {
+    .lfttxt {
+        padding-top: 10px;
+    }
+}
 
 /* .aboutUsRow{
     width: 92%;
