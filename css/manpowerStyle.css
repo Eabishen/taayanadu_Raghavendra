@@ -49,9 +49,14 @@
 
 .centered {
   position: absolute;
-  bottom: 20%;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, 50%);
+
+}
+
+#headingcontainer {
+  bottom: 10% !important;
 }
 
 .centered h1 {
