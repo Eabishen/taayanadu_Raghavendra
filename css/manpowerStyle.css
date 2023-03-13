@@ -109,8 +109,6 @@
   }
 }
 
-
-
 @media only screen and (max-width: 500px) {
   .slider {
     width: 100%;
@@ -120,8 +118,6 @@
   .centered {
     bottom: 0px;
   }
-
-
 
   .aboutUsImg {
     display: flex;
