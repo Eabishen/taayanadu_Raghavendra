@@ -7,7 +7,7 @@
 }
 
 .garmented {
-  bottom: 10% !important;
+  top: 10% !important;
 }
 
 @media only screen and (max-width: 1700px) {
