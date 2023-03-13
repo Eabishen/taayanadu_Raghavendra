@@ -2077,6 +2077,10 @@ img {
     .singleblogwrapper {
         grid-template-columns: 1fr;
     }
+
+    .vote-reasons {
+        align-items: center;
+    }
 }
 
 @media (max-width: 575px) {
