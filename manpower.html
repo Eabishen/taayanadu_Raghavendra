@@ -182,11 +182,28 @@ form.contFrm {
   border-radius: 12px;
 }
 
+.businesscards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-block: 2rem;
+}
+
+.businesscards > div{
+  width: calc(100% / 5);
+  padding: 10px 20px;
+
+}
+
 /* Responcive css Start */
 
 @media (max-width: 991px) {
   .sec-pad {
     padding: 20px 0 0px;
+  }
+  .businesscards > div{
+    width: calc(100%/3);
   }
 
   .contact-sec .contact-ul li,
@@ -240,8 +257,14 @@ form.contFrm {
     font-size: 14px;
   }
   .businesscards {
+    flex-direction: column;
         gap: 1.5rem;
       } 
+
+      .businesscards > div{
+        width:calc(100% - 100px);
+      }
+
   .titlebreak{
     max-width: 20ch;
     margin-inline: auto;
@@ -326,27 +349,31 @@ form.contFrm {
         id="img-1"
         src="assets/security-5823826_1920.jpg"
         alt="Image 1"
+        data-input="img0"
       />
       <!-- Security gaurd src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlok9mZBBbWdzp-5J0ymsDgXLGmvTxIXqKNg&usqp=CAU" -->
-      <div class="centered" style="z-index: 100 !important;">
+      <div id="headingcontainer" class="centered" style="z-index: 100 !important;">
         <h1 id="middleHeading" style="color: #fff;font-size: 60px;"></h1>
       </div>
       <img
         id="img-2"
         src="assets/pexels-cottonbro-studio-4108715.jpg"
         alt="Image 2"
+        data-input ="img1"
       />
       <!-- houseKeeping  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEkPurWdQYR3EIzuBgciEeh9-Bnk3MgLRW9UpuAd5PG8euvxeK-s4T1yk8H3_mM2NNtsM&usqp=CAU" -->
       <img
         id="img-3"
         src="assets/gardenerHighQuality.jpg"
         alt="Image 3"
+        data-input = "img2"
       />
       <!-- garderner src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR56uidJz9b6l-n4KjDB4Ye9bBurtgObyuRmQ&usqp=CAU" -->
       <img
         id="img-4"
         src="assets/car-2942982_1920.jpg"
         alt="Image 4"
+        data-input = "img3"
       />
       <!-- driver src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvnjQ5DkLJ0qIg80IW51KX6F0o5ZqJK-H1bA&usqp=CAU" -->
     </div>
@@ -412,7 +439,7 @@ form.contFrm {
             </div> -->
             <div class="col-lg-12">
                 <div class = "content">
-                  <h1 class="aboutUsH2" style="color: var(--primary-color);">About Us</h1>
+                  <h1 class="aboutUsH2" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: var(--primary-color);">About Us</h1>
                   <span><!-- line here --></span>
                     <p>A company is known for its employees. We are a manpower agency based out of Bengaluru who believe in getting the right candidate for your company depending upon your requirements. We act as a bridge between the organization and the resources and facilitate all the aspects pertaining to educating the organization culture, rules and regulations, discipline, payroll, etc. Professional manpower agencies like ours know exactly where to source the right kind of resources depending upon the need which reduces the cost to the company in terms of effort, time and resources involved in finding one.</p>
                     <br>
@@ -441,7 +468,7 @@ form.contFrm {
   <!-- <div class="">
     <div class="textResource">Security Guards </div>
   </div> -->
-  <h4 style="position: relative;margin-top: 10px;margin-bottom: 50px;color: rgb(85, 85, 156);">Parking lot contracts </h4>
+  <h4 style="position: relative;margin-top: 10px;margin-bottom: 50px;color: rgb(85, 85, 156);">Parking Lot Contracts </h4>
 </div>
         <div class="col-lg-3 col-md-3 col-sm-4 resourceBox" style="margin-bottom: 100px;">
           <img style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;border-radius: 20px;object-fit: cover;" src="https://s01.sgp1.digitaloceanspaces.com/inline/917092-ywzqninjbf-1552923153.jpg" alt="">
@@ -525,54 +552,52 @@ form.contFrm {
       <div class="row " style="text-align: center;" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="titlebreak" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: var(--primary-color);margin-bottom: 50px;">Legal Certificates & Governance Number</h1>
       </div>
-      <div class="row businesscards" style="width: 80%;margin-left: auto;margin-right: auto;" data-aos="fade-up" data-aos-duration="1000">
-        <div class="col-lg-3 col-md-6" style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+      <div class="row businesscards" data-aos="fade-up" data-aos-duration="1000">
+        <div style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
             <h5 style="text-align: center;padding-top: 16px;">License Number</h5>
             <hr>
             <h6 style="text-align: center;padding-bottom: 16px;">UI7299KA2021PTC155770</h6>
         </div>
-        <div class="col-lg-3 col-md-6" style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+        <div style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
           <h5 style="text-align: center;padding-top: 16px;">Labor License Number</h5>
           <hr>
           <h6 style="text-align: center;padding-bottom: 16px;">49/180/S/0043/2022</h6>
       </div>
-      <div class="col-lg-3 col-md-6" style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+      <div style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
         <h5 style="text-align: center;padding-top: 16px;">EPF Number</h5>
         <hr>
         <h6 style="text-align: center;padding-bottom: 16px;">50000614010000199</h6>
     </div>
-    <div class="col-lg-3 col-md-6" style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+    <div style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
       <h5 style="text-align: center;padding-top: 16px;">ESIC Number</h5>
       <hr>
       <h6 style="text-align: center;padding-bottom: 16px;">BGMRD2541782000</h6>
   </div>
-  <div class="col-lg-3 col-md-6" style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
-    <h5 style="text-align: center;padding-top: 16px;">GST Number</h5>
-    <hr>
-    <h6 style="text-align: center;padding-bottom: 16px;">29AAJCT0764C1ZB</h6>
-</div>
-<div class="col-lg-3 col-md-6" style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
-  <h5 style="text-align: center;padding-top: 16px;">PAN Number</h5>
-  <hr>
-  <h6 style="text-align: center;padding-bottom: 16px;">AAJCT0764C</h6>
-</div><div class="col-lg-3 col-md-6" style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
-  <h5 style="text-align: center;padding-top: 16px;">MSME Number</h5>
-  <hr>
-  <h6 style="text-align: center;padding-bottom: 16px;">UDYAM-KA-03-0139554</h6>
-</div>
-<div class="col-lg-3 col-md-6" style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
-<h5 style="text-align: center;padding-top: 16px;">TAN Number </h5>
-<hr>
-<h6 style="text-align: center;padding-bottom: 16px;">BLRT1</h6>
-</div>
+ 
       </div>
 
-
-
-
-
-
-
+      <div class="row businesscards" data-aos="fade-up" data-aos-duration="1000">
+        <div style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+          <h5 style="text-align: center;padding-top: 16px;">GST Number</h5>
+          <hr>
+          <h6 style="text-align: center;padding-bottom: 16px;">29AAJCT0764C1ZB</h6>
+      </div>
+      <div style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+        <h5 style="text-align: center;padding-top: 16px;">PAN Number</h5>
+        <hr>
+        <h6 style="text-align: center;padding-bottom: 16px;">AAJCT0764C</h6>
+      </div>
+      <div style="border-radius: 25px;    border: 2px solid #1de36d;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+        <h5 style="text-align: center;padding-top: 16px;">MSME Number</h5>
+        <hr>
+        <h6 style="text-align: center;padding-bottom: 16px;">UDYAM-KA-03-0139554</h6>
+      </div>
+      <div style="border-radius: 25px;border: 2px solid #0f91df;box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;">
+      <h5 style="text-align: center;padding-top: 16px;">TAN Number </h5>
+      <hr>
+      <h6 style="text-align: center;padding-bottom: 16px;">BLRT1</h6>
+      </div>
+      </div>
 
 
 <div>
@@ -668,21 +693,36 @@ form.contFrm {
           <h1 class="section-title" style="
           font-size: 45px;
           color: #004999;
-      ">Contact us</h1>
+      ">Contact Us</h1>
 
-          <ul class="contact-ul">
-            <li style="font-size: 17px;list-style-type: none;" ><i class="fa fa-location-dot"></i>No. 19, Pushpagiri, 31st Main Road, Banashankari 3rd Stage, Bangalore 560085</li>
+<ul class="contact-ul">
+  <div class="contactoneline">
+    <div class="iconcontact">
+      <i class="fa fa-location-dot"></i>
 
-            <li style="font-size: 17px;list-style-type: none;">
-              <i class="fa fa-phone"></i>
-              <a href="tel:8029915224">+91 8029915224</a>
-            </li>
+    </div>
+    <li style="font-size: 17px;list-style-type: none;">No. 19, Pushpagiri,
+      31st Main Road, Banashankari 3rd Stage, Bangalore 560085</li>
+  </div>
+  <div class="contactoneline">
+    <div class="iconcontact">
+      <i class="fa fa-phone"></i>
+    </div>
+    <li style="font-size: 17px;list-style-type: none;">
+      <a href="tel:8029915224">+91 8029915224</a>
+    </li>
+  </div>
 
-            <li style="font-size: 17px;list-style-type: none;">
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:pardeepkumar4bjp@gmail.com">info@taaynaduraghavendra.com</a>
-            </li>
-          </ul>
+  <div class="contactoneline">
+    <div class="iconcontact">
+      <i class="fa-solid fa-envelope"></i>
+    </div>
+    <li style="font-size: 17px;list-style-type: none;">
+      <a href="mailto:pardeepkumar4bjp@gmail.com">info@taaynaduraghavendra.com</a>
+    </li>
+  </div>
+</ul>
+
 
           <!-- <span>
             <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
@@ -794,20 +834,29 @@ form.contFrm {
   
 
   function changeSlide(n) {
+    let centered = document.querySelector('#headingcontainer')
     for (var i = 0; i < imgs.length; i++) {
       imgs[i].style.opacity = 0;
       dots[i].className = dots[i].className.replace(' active', '');
-      console.log("i is = " + i);
+      // console.log("i is = " + i);
+
+     
       
     }
 
+ 
+
     currentImg = (currentImg + 1) % imgs.length;
-    console.log("currentImg is = " + currentImg);
+    // console.log("currentImg is = " + currentImg);
     if(currentImg==0){
+    
         document.getElementById("middleHeading").innerHTML = "Security guard";
+
       }
       else if(currentImg==1){
+      
         document.getElementById("middleHeading").innerHTML = "House keeping";
+       
       }
       else if(currentImg==2){
         document.getElementById("middleHeading").innerHTML = "Gardener";
@@ -815,6 +864,9 @@ form.contFrm {
       else{
         document.getElementById("middleHeading").innerHTML = "Driver";
       }
+    
+      
+        
 
     if (n != undefined) {
       clearInterval(timer);
@@ -824,6 +876,7 @@ form.contFrm {
 
     imgs[currentImg].style.opacity = 1;
     dots[currentImg].className += ' active';
+      
   }
 
   function calculateDays(today, eventDate) {
