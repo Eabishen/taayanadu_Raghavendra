@@ -6,6 +6,10 @@
   transform: translate(-50%, -50%);
 }
 
+.garmented {
+  bottom: 10% !important;
+}
+
 @media only screen and (max-width: 1700px) {
   .centeredGarment {
     width: 80%;
@@ -34,6 +38,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .garmented {
+    bottom: 20% !important;
+  }
+
 }
 
 .garmentaboutUsRow {
