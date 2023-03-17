@@ -559,7 +559,7 @@ a {
 #middleHeadingsub {
     font-size: 24px;
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 5);
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8)
 }
 
 /* EVENT Page */
@@ -958,6 +958,10 @@ img {
 }
 
 /* VOTE FOR US */
+
+.contact-detail h1 {
+    text-transform: capitalize;
+}
 
 /* Subscribe */
 #subcribe {
@@ -1860,6 +1864,7 @@ img {
 
     .landing-bg {
         padding: 1rem;
+        text-align: center;
     }
 
     .navbar-brand {
@@ -2072,6 +2077,11 @@ img {
         padding: 2rem 10px;
     }
 
+    .contact-detail h1 {
+        text-align: center !important;
+
+    }
+
     .card-grid {
         grid-template-columns: 1fr;
     }
@@ -2091,8 +2101,9 @@ img {
     }
 
     .vote-reasons {
-        align-items: center;
+        margin-top: 1rem !important;
     }
+
 
     .centered {
         width: 100%;
@@ -2100,10 +2111,13 @@ img {
 
     .centered #middleHeading {
         font-size: 30px;
+        font-weight: 600;
     }
 
     #middleHeadingsub {
         font-size: 18px;
+        font-weight: 500;
+        word-spacing: 2px;
     }
 }
 

@@ -912,7 +912,7 @@
 
     .centeredAmbulance {
       position: absolute;
-      top: 65%;
+      bottom: 0%;
       left: 30%;
       transform: translate(-50%, -50%);
     }
@@ -927,10 +927,15 @@
       }
     }
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 584px) {
       .ambulancetitle {
         font-size: 26px;
         width: 230px;
+        font-weight: 500 !important;
+      }
+
+      .centeredAmbulance {
+        margin-top: 50px;
       }
 
       .garmentcontent p {
@@ -939,7 +944,7 @@
 
       .ambulancesub {
         font-size: 16px;
-
+        width: 200px;
 
       }
 

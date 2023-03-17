@@ -10,6 +10,17 @@
   top: 10% !important;
 }
 
+
+/* .garmented::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.137);
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+}
+ */
+
 @media only screen and (max-width: 1700px) {
   .centeredGarment {
     width: 80%;
@@ -40,9 +51,22 @@
   }
 
   .garmented {
-    bottom: 20% !important;
+    bottom: -10% !important;
   }
 
+
+  .centered.garmented {
+    width: 90% !important;
+    border-radius: 10px;
+  }
+
+}
+
+
+@media only screen and (max-width: 340px) {
+  .garmented {
+    bottom: 0 !important;
+  }
 }
 
 .garmentaboutUsRow {
