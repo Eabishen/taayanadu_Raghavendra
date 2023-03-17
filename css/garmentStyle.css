@@ -51,7 +51,7 @@
   }
 
   .garmented {
-    bottom: -10% !important;
+    bottom: 0% !important;
   }
 
 
@@ -63,11 +63,7 @@
 }
 
 
-@media only screen and (max-width: 340px) {
-  .garmented {
-    bottom: 0 !important;
-  }
-}
+/* @media only screen and (max-width: 340px) {} */
 
 .garmentaboutUsRow {
   width: 86%;
